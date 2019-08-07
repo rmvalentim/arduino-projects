@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="#d0f3ff">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#d0f3ff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#9da3ff"
+        android:text="Temperatura"
+        android:onClick="temperatura"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#9da3ff"
+        android:text="Umidade"
+        android:onClick="umidade"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#9da3ff"
+        android:text="Luminosidade"
+        android:onClick="luminosidade"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#9da3ff"
+        android:text="Distancia cm"
+        android:onClick="distanciaCm"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#9da3ff"
+        android:text="Distancia Pol"
+        android:onClick="distanciaPol"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+
+
+
+
+
+
+</LinearLayout>

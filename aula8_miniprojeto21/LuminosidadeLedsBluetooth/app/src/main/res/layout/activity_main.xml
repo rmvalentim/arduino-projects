@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnLedRed" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="VERMELHO"
+        android:background="#ff4949"
+        android:layout_margin="5px"/>
+
+    <Button
+        android:id="@+id/btnLedYellow" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="AMARELO"
+        android:background="#fffb49"
+        android:layout_margin="5px"/>
+    <Button
+        android:id="@+id/btnLedGreen" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="VERDE"
+        android:background="#58ff49"
+        android:layout_margin="5px"/>
+    <Button
+        android:id="@+id/btnLedWhite" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="BRANCO"
+        android:background="#bfffff"
+        android:layout_margin="5px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <SeekBar
+        android:id="@+id/seekBarLed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px" />
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="#722000">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#722000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="DO"
+        android:onClick="notaDo"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="RE"
+        android:onClick="notaRe"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="MI"
+        android:onClick="notaMi"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="FA"
+        android:onClick="notaFa"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="SOL"
+        android:onClick="notaSol"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="LA"
+        android:onClick="notaLa"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7"
+        android:text="SI"
+        android:onClick="notaSi"/>
+
+
+
+
+
+</LinearLayout>

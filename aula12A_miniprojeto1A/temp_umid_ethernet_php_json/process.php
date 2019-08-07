@@ -1,0 +1,34 @@
+<?php
+
+	$parametro="";
+	
+	if(isset($_GET['L']))
+		$parametro.= "L=" . $_GET['L'];
+	
+	// URL para onde será enviada a requisição GET
+	$url_feed = "192.168.0.178?" . $parametro;
+	 
+	// Inicia a sessão cURL
+	$ch = curl_init();
+	 
+	// Informa a URL onde será enviada a requisição
+	curl_setopt($ch, CURLOPT_URL, $url_feed);
+	 
+	// Se true retorna o conteúdo em forma de string para uma variável
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	 
+	// Envia a requisição
+	$result = curl_exec($ch);
+	 
+	// Finaliza a sessão
+	curl_close($ch);
+	
+	//Capturando retorno do Arduino em Json e convertendo para Array
+	$retorno_arduino = json_decode($result, true);
+		
+	//Montando o parâmetro com os dados do array 
+	$novo_parametro = "umid=" . $retorno_arduino["umid"] . "&temp=" . $retorno_arduino["temp"];
+	
+	// Redirecionando para o formulario
+	header("Location: formulario.php?" . $novo_parametro);
+?>

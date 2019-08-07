@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#111111">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnMedirTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medir Temperatura"
+
+        android:layout_margin="10px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:height="100dp"
+        android:id="@+id/edtTxtResultadoTemperatura"
+        android:textColor="#ffffff"
+        android:text="- º C"
+        android:textAlignment="center"
+        android:enabled="false"/>
+    <Button
+        android:id="@+id/btnMedirUmidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medir Umidade"
+        android:layout_margin="10px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:height="100dp"
+        android:id="@+id/edtTxtResultadoUmidade"
+        android:textColor="#ffffff"
+        android:text="- %"
+        android:textAlignment="center"
+        android:enabled="false"/>
+    <Button
+        android:id="@+id/btnMedirLuminosidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medir Luminosidade"
+        android:layout_margin="10px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:height="100dp"
+        android:id="@+id/edtTxtResultadoLuminosidade"
+        android:textColor="#ffffff"
+        android:text="-"
+        android:textAlignment="center"
+        android:enabled="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/desconectar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Desconectar"
+            android:background="@android:color/holo_red_light"
+            android:layout_margin="5px"/>
+        <Button
+            android:id="@+id/conectar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Conectar"
+            android:background="@android:color/holo_green_light"
+            android:layout_margin="5px"
+            />
+    </LinearLayout>
+
+</LinearLayout>
